@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: cfyp9a05u-dotnet-basic-gitops
+  description: This is GitOps manifest for cfyp9a05u-dotnet-basic   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: cfyp9a05u-dotnet-basic
+    janus-idp.io/tekton: cfyp9a05u-dotnet-basic
+    backstage.io/kubernetes-id: cfyp9a05u-dotnet-basic 
+    backstage.io/techdocs-ref: dir:. 
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:cfyp9a05u-dotnet-basic

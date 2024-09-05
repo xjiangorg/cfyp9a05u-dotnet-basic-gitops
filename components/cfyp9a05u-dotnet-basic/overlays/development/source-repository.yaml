@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: cfyp9a05u-dotnet-basic-repository
+spec:
+  url: https://github.com/xjiangorg/cfyp9a05u-dotnet-basic
